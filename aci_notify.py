@@ -133,7 +133,6 @@ if __name__ == "__main__":
                         body = f"Fault is :\n{''.join(message)}"
                         #print(body)
                         if re.findall(r'po[0-9]+', tenant['faultRecord']['attributes']['affected']) == []:
-                            if not 'RDCESX54' in desc1[0]['l1PhysIf']['attributes']['pathSDescr']:
-                                send_email('New critical fault in Cisco ACI', body)
+                            send_email('New critical fault in Cisco ACI', body)
 
 
