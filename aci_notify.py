@@ -87,7 +87,7 @@ if __name__ == "__main__":
                          temp = tenant['faultRecord']['attributes']['affected']
                          a, _ = temp.split(']')
                          topology = a + ']'
-                         url1 = 'https://sdn.ad.btk.bg/api/node/mo/' + topology + '.json'
+                         url1 = 'https://10.10.10.10/api/node/mo/' + topology + '.json'
                          desc = get_tenants(url1).json()
                          desc1 = desc['imdata']
 
@@ -116,7 +116,7 @@ if __name__ == "__main__":
                         temp = tenant['faultRecord']['attributes']['affected']
                         a, _ = temp.split(']')
                         topology = a + ']'
-                        url1 = 'https://sdn.ad.btk.bg/api/node/mo/' + topology + '.json'
+                        url1 = 'https://10.10.10.10/api/node/mo/' + topology + '.json'
                         desc = get_tenants(url1).json()
                         desc1 = desc['imdata']
 
